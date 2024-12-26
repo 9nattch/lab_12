@@ -1,12 +1,14 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+template <typename Nct>
+void mySwap(Nct &, Nct &);
 
 int main(){
 	int x, y;
 	string a, b;
 	char p, q;
-	
+ 
 	cin >> x >> y >> a >> b >> p >> q;
 	
 	cout << "Before swapping:\n";
@@ -28,5 +30,12 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+template <typename Nct>
+void mySwap(Nct &d, Nct &n){
+	Nct dream = d;
+	d = n;
+	n = dream;
+
 }
 
